@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+
+:root{
+    --primary-color: #217C74;
+    --secondary-color: #e1ede8;
+    --secondary-color-darker:rgb(85, 207, 154)8;
+    --dark-color: #0f0f0f;
+    --color1: #1E8FCD;
+    --color2: #804A53;
+    --color3: #81DED5;
+    --color4: #2B217C;
+    --color4-darker: #0e0935;
+    --color5: #7C5021;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
+}
+
+nav.side-bar{
+    width: 5vw;
+    height: 100vh;
+    background-color: var(--color4-darker);
+    padding: 40px 0 40px 1%;
+    box-shadow: 4px 0px 5px 1px var(--color2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    transition: all 300ms ease-in-out;
+    overflow: hidden;
+}
+
+.icon{
+    padding-left: 25%;
+}
+
+nav.side-bar:hover{
+    width: 20vw;
+}
+
+.show-hide-button{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.show-hide-button div{
+    color: var(--secondary-color);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.side-bar-link:hover{
+    background-color: var(--color4);
+    transform: translateX(-6px);
+    transition: all 300ms ease-in-out;
+}
+
+ul li.side-bar-link:active{
+    transform: translateX(-6px) translateY(10px);
+    background-color: rgb(39, 3, 53);
+    transition: all 80ms ease-in-out;
+    
+}
+
+ul li.side-bar-link a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    font-family: 'Monomaniac One', sans-serif;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+ul li.side-bar-link a:active{
+    color: var(--secondary-color-darker);
+}
+
+ul li.side-bar-link a .linkSB{
+    margin-left: 40px;
+}
