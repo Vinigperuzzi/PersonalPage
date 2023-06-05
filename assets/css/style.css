@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Great+Vibes&family=Monomaniac+One&family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,700;1,300;1,500&display=swap');
+
+/*
+font-family: 'Cinzel', serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Monomaniac One', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
 
 :root{
     --primary-color: #217C74;
     --secondary-color: #e1ede8;
-    --secondary-color-darker:rgb(85, 207, 154)8;
+    --secondary-color-darker: #313835;
     --dark-color: #0f0f0f;
     --color1: #1E8FCD;
     --color2: #804A53;
@@ -21,10 +28,6 @@
 
 }
 
-body{
-    height: 100vh;
-}
-
 nav.side-bar{
     width: 5vw;
     height: 100vh;
@@ -34,9 +37,11 @@ nav.side-bar{
     position: fixed;
     top: 0;
     left: 0;
-    min-height: 100vh;
+    max-height: 100%;
+    min-width: 50px;
     transition: all 300ms ease-in-out;
     overflow: hidden;
+    z-index: 1;
 }
 
 .icon{
@@ -73,13 +78,12 @@ ul li.side-bar-link:active{
     transform: translateX(-6px) translateY(10px);
     background-color: rgb(39, 3, 53);
     transition: all 80ms ease-in-out;
-    
 }
 
 ul li.side-bar-link a{
     color: var(--secondary-color);
     text-decoration: none;
-    font-size: 20px;
+    font-size: calc(1vh + 1vw);
     padding: 20px 4%;
     font-family: 'Monomaniac One', sans-serif;
     display: flex;
@@ -93,4 +97,170 @@ ul li.side-bar-link a:active{
 
 ul li.side-bar-link a .linkSB{
     margin-left: 40px;
+}
+
+/*Sidebar style*/
+
+
+.full-page{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.background-one, .background-tree{
+    background-image: url(../imgs/rose-petals.svg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: row;
+}
+
+.background-one > div{
+    width: 55vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25vw;
+}
+
+.background-one p{
+    margin: 2.5vw 0px;
+    color: var(--secondary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1.2vh + 1.2vw);
+}
+
+.background-one h1{
+    margin: 2.5vw 0px;
+    color: var(--secondary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1.2vh + 1.2vw);
+}
+
+.background-one h1 span{
+    margin: 2.5vw 0px;
+    color: var(--color4-darker);
+    font-size: calc(2vh + 2vw);
+    font-family: 'Great Vibes', cursive;
+    padding-left: 3vw;
+}
+
+
+
+#home-page-photo{
+    width: 45vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 0;
+    padding: 0;
+}
+
+#photo-container{
+    width: 50%;
+    height: 70%;
+    max-width: 100%;
+    max-height: 70%;
+    background-image: url(../imgs/Perfil2.png);
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+
+#video-wrapper{
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.background-tree{
+    background-image: url(../imgs/subtle-prism.svg);
+}
+
+/*Media queries*/
+
+@media (max-height: 600px) {
+    ul li.side-bar-link a{
+        padding: 20px 2%;
+        margin-bottom: 10px;
+        line-height: 5px;
+    }
+    ul li.side-bar-link:active{
+        transform: translateX(-6px) translateY(2px);
+        background-color: rgb(39, 3, 53);
+        transition: all 80ms ease-in-out;
+    }
+    #home-page-photo{
+        width: 45vw;
+        height: 100vh;
+        align-items: end;
+        align-self: flex-end;
+    }
+    
+    #photo-container{
+        width: 25vw;
+        height: 90vh;
+    }
+}
+
+@media (max-height: 450px) {
+    ul li.side-bar-link a{
+        padding: 0px 0px;
+        margin-bottom: 0px;
+        line-height: 15px;
+    }
+    ul li.side-bar-link:active{
+        transform: translateX(-6px) translateY(2px);
+        background-color: rgb(39, 3, 53);
+        transition: all 80ms ease-in-out;
+    }
+    #home-page-photo{
+        width: 45vw;
+        height: 100vh;
+        align-items: end;
+        align-self: flex-end;
+    }
+    
+    #photo-container{
+        width: 25vw;
+        height: 100vh;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    nav.side-bar:hover{
+        width: 60vw;
+        overflow-x: hidden;
+    }
+    .background-one{
+        flex-direction: column;
+    }
+    .background-one > div{
+        width: 100vw;
+        height: 40vh;
+    }
+    #home-page-photo{
+        width: 100vw;
+        height: 60vh;
+    }
+    #photo-container{
+        width: 100%;
+        height: 60%;
+        max-width: 100%;
+        max-height: 70%;
+        background-image: url(../imgs/Perfil2.png);
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        padding: 0;
+        margin: 0;
+    }
 }
