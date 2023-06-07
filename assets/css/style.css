@@ -603,4 +603,10 @@ ul li.side-bar-link a .linkSB{
         width: 3vh;
         height: 3vh;
     }
+    #last-skill{
+        margin-bottom: 5vh;
+    }
+    .contato{
+        padding-left: 4vw;
+    }
 }
