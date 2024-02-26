@@ -1,11 +1,11 @@
-# PersonalPage
----
-This project is very special to me, cause it was my first contact with HTML & CSS.
-If you analyse the code, you may notice my lack of domain in those languages back then, but it makes me feel happy to see the amount of improvement I have since then.
+# PersonalPage - My Coding Journey Debut 🚀
+This project holds a special place in my coding journey—it marks my initial exploration into the realms of HTML and CSS. While the code may reveal my early learning curve in these languages, it brings me immense joy to witness the substantial progress I've made since then.
 
-We don't need screenshots, 'cause it is online!!!
-Another reason to enjoy to  much this project, it was my first deploy of something... Even it is small, i love it!
+No need for screenshots—this project is live online! It represents my inaugural deployment, a small yet cherished accomplishment.
 
-You can check by yourself in the link bellow. Have fun!! I certainlly has, while i was coding... 😄
+Feel free to explore it yourself at the link below. Have fun! I certainly did while coding it. 😄
 
->https://vinigperuzzi.github.io/PersonalPage/
+Explore [PersonalPage](https://vinigperuzzi.github.io/PersonalPage/)
+
+Thank you for sharing this moment in my coding evolution. If you have any thoughts or feedback, I'd love to hear them. Happy coding! 🌐💻
+### Vinigperuzzi
