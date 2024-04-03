@@ -7,5 +7,6 @@ Feel free to explore it yourself at the link below. Have fun! I certainly did wh
 
 Explore [PersonalPage](https://vinigperuzzi.github.io/PersonalPage/)
 
-Thank you for sharing this moment in my coding evolution. If you have any thoughts or feedback, I'd love to hear them. Happy coding! 🌐💻
-### Vinigperuzzi
+Thank you for sharing this moment in my coding evolution. If you have any thoughts or feedback, I'd love to hear them.
+Happy Coding! 
+### Vinigperuzzi 🧙‍♂️
